@@ -1,0 +1,44 @@
+{
+    "coc.preferences.extensionUpdateCheck": "daily",
+    "suggest.noselect": true,
+    "suggest.enablePreselect": false,
+    "diagnostic.displayByAle": false,
+    "diagnostic.refreshOnInsertMode": false,
+    "diagnostic.checkCurrentLine": true,
+    "diagnostic.virtualTextPrefix": " ❯❯❯ ",
+    "diagnostic.virtualText": false,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "json"
+    ],
+    "snippets.userSnippetsDirectory": "/Users/SJCHEN/.config/nvim/UltiSnips",
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+                "cc",
+                "cpp",
+                "c++",
+                "objc",
+                "objcpp"
+            ],
+            "rootPatterns": [
+                ".ccls",
+                "compile_commands.json",
+                ".git/",
+                ".hg/"
+            ],
+            "initializationOptions": {
+                "highlight": {
+                    "lsRanges": true
+                },
+                "cache": {
+                    "directory": "/tmp/ccls"
+                },
+                "clang++": {
+                    "resourceDir": "/usr/bin/clang++"
+                }
+            }
+        }
+    }
+}
